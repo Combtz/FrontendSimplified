@@ -1,5 +1,17 @@
-div{
-    width: 100%;
-    max-width: 200px;
-    background-color: rgba(0,0,0,0.2);
+section {
+    height: 80vh;
+    border: 1px solid black;
+}
+
+p {
+    color: blue !important;
+}
+
+.red {
+    color: red;
+}
+
+
+#title {
+    color: black;
 }
