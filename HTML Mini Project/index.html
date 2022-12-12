@@ -5,94 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <section>
       <nav>
-        <img src="./assets/FES.svg" alt="" />
+        <img src="./assets/FES.svg" class="logo" alt="" />
         <ul>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Discord">Discord</a></li>
-          <li><a href="#Contact"></a>Contact</li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#discord">Discord</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <header>
-        <div>
-          <h1>Best place to learn frontend</h1>
-          <p>Go from absolute beginner to pro with a simplified process</p>
-          <button>Start Now</button>
+        <div class="row">
+          <div>
+            <h1>Best place to learn frontend</h1>
+            <p class="subheader">
+              Go from absolute beginner to pro with a simplified process
+            </p>
+            <button>Start Now</button>
+          </div>
+          <figure>
+            <img src="./assets/laptop.png" alt="Home page image" />
+          </figure>
         </div>
-        <figure>
-          <img src="./assets/laptop.png" alt="Home page image" />
-        </figure>
       </header>
     </section>
     <main>
       <section id="about">
         <h2>About</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-            perferendis ullam dolorum autem commodi ipsam optio, a debitis
-            repellat, quos vitae aspernatur molestiae accusantium aut dolore
-            molestias! Sapiente, necessitatibus voluptatum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
-            cumque neque animi numquam, saepe, itaque suscipit exercitationem
-            fuga quas alias ea beatae ex, ut non sapiente sunt rem ratione quia.
-          </p>
+        <div class="row">
+          <div class="section__description">
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                perferendis ullam dolorum autem commodi ipsam optio, a debitis
+                repellat, quos vitae aspernatur molestiae accusantium aut dolore
+                molestias! Sapiente, necessitatibus voluptatum.
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aliquam cumque neque animi numquam, saepe, itaque suscipit
+                exercitationem fuga quas alias ea beatae ex, ut non sapiente
+                sunt rem ratione quia.
+              </p>
+            </div>
+            <figure class="about__img--wrapper">
+              <img src="./assets/about.jpg" alt="" />
+            </figure>
+          </div>
         </div>
-        <figure>
-          <img src="./assets/about.jpg" alt="" />
-        </figure>
       </section>
 
       <section id="discord">
         <h2>Discord</h2>
-        <figure>
-          <img src="./assets/discord.jpg" alt="" />
-        </figure>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            quae officia ea commodi iure impedit eum quaerat quisquam ipsa
-            minus, nam quia facilis nihil ut sit iste voluptates sapiente
-            delectus?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
-            odit obcaecati dolorum minus optio facere sit enim omnis, nam,
-            laudantium illum fugit quos quia quod consectetur quis ducimus et
-            iure.
-          </p>
+        <div class="row">
+          <div class="section__description">
+            <figure>
+              <img src="./assets/discord.png" alt="Discord" />
+            </figure>
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio, quae officia ea commodi iure impedit eum quaerat
+                quisquam ipsa minus, nam quia facilis nihil ut sit iste
+                voluptates sapiente delectus?
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Impedit odit obcaecati dolorum minus optio facere sit enim
+                omnis, nam, laudantium illum fugit quos quia quod consectetur
+                quis ducimus et iure.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section id="contact">
         <h2>Contact</h2>
-        <form action="">
-            <div>
-                <label>Email</label>
-                <input type="text" placeholder="jane@example.com">
-            </div>
-            <div>
-                <label>Message</label>
-                <textarea type="text" placeholder=""></textarea>
-            </div>
-            
+        <div class="row">
+          <form action="">
+            <label>Email</label>
+            <input type="email" placeholder="jane@example.com" />
+
+            <label>Message</label>
+            <textarea type="text" placeholder=""></textarea>
+
             <button type="submit">Submit</button>
-        </form>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
-        <img src="./assets/FES.svg" alt="">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#Contact">Contact</a>
-            <a href="">Courses</a>
-        </div>
-        <p>Copyright Frontend Simplified</p>
+      <img class="footer__logo" src="./assets/FES.svg" alt="" />
+      <div class="footer__links">
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="#Contact">Contact</a>
+        <a class="footer__link" href="">Courses</a>
+      </div>
+      <p>Copyright Frontend Simplified</p>
     </footer>
   </body>
 </html>
